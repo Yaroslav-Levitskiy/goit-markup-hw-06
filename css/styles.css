@@ -480,7 +480,7 @@ p {
 
 .subscribe-form {
   display: flex;
-  
+
   margin-left: 80px;
 }
 
@@ -674,7 +674,7 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 408px;
-  height: 576px;
+  min-height: 576px;
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -694,4 +694,93 @@ p {
   background: var(--color-CORNFLOWER);
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
+}
+
+.registration-form {
+  display: block;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.registration-form-field {
+  position: relative;
+  display: block;
+}
+
+.registration-form-appeal {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--color-NAVY-BLUE);
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.registration-form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  color: var(--color-LIGHT-SLAIGHT);
+}
+
+.registration-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 38px;
+  margin-bottom: 8px;
+
+  background-color: transparent;
+  transition: var(--animation);
+}
+
+.registration-form-input:focus {
+  outline: 1px solid var(--color-IRIS);
+}
+
+.registration-form-icon {
+  position: absolute;
+  bottom: 19px;
+  left: 16px;
+  fill: var(--color-NAVY-BLUE);
+  transition: var(--animation);
+}
+
+.registration-form-input:focus + .registration-form-icon {
+  fill: var(--color-IRIS);
+}
+
+.btn-send {
+  display: block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--color-WHITE);
+  padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+  margin-top: 24px;
+  background: var(--color-IRIS);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  transition: var(--animation);
+}
+
+.btn-send:hover {
+  color: var(--color-WHITE);
+  background: var(--color-OCEAN);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
